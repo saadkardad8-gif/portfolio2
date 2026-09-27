@@ -208,6 +208,10 @@ section.block{padding:120px 0;position:relative;}
 .proj .pmeta .badge{display:inline-block;margin-top:8px;padding:4px 11px;border-radius:30px;background:rgba(59,130,255,.12);color:var(--accent);font-size:11px;}
 .proj .arrow{position:absolute;top:30px;right:32px;width:26px;height:26px;opacity:0;transform:translate(-6px,6px);transition:.4s;color:var(--accent);}
 .proj:hover .arrow{opacity:1;transform:none;}
+.proj .pmissions{list-style:none;margin-bottom:16px;max-width:600px;}
+.proj .pmissions li{position:relative;padding-left:20px;color:var(--muted);font-size:15px;margin-bottom:8px;}
+.proj .pmissions li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--accent);}
+.proj .pmissions strong{color:var(--text);font-weight:500;}
 
 /* ---------- CONTACT ---------- */
 #contact{padding-bottom:90px;}
@@ -276,6 +280,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;}
     <li><a href="#home">Accueil</a></li>
     <li><a href="#about">À propos</a></li>
     <li><a href="#skills">Compétences</a></li>
+    <li><a href="#experience">Expérience</a></li>
     <li><a href="#projects">Projets</a></li>
     <li><a href="#contact" class="nav-cta">Me contacter</a></li>
   </ul>
@@ -368,6 +373,33 @@ footer{border-top:1px solid var(--line);padding:40px 0;}
           <span class="chip">Arabe</span><span class="chip">Français</span><span class="chip">Anglais</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="block">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Expérience</span>
+      <h2 class="display">Mon parcours <span class="accent">professionnel</span>.</h2>
+    </div>
+    <div class="proj-list">
+
+      <article class="proj reveal">
+        <div class="pnum">01</div>
+        <div class="pbody">
+          <h3>Développeur Web Junior — Wafa Assurances Ahl Al Khair</h3>
+          <p>Stage au sein d'une agence d'assurance : développement de sites web et d'applications web.</p>
+          <ul class="pmissions">
+            <li><strong>Application web de paiement :</strong> conception et développement d'une application permettant d'effectuer le paiement des clients.</li>
+            <li><strong>Site web de l'agence :</strong> création d'un site présentant les informations de l'agence (adresse, localisation sur la carte).</li>
+          </ul>
+          <div class="ptags"><span>Développement web</span><span>Application web</span><span>Paiement</span><span>Site vitrine</span></div>
+        </div>
+        <div class="pmeta">Stage<br><span class="badge">Assurance</span></div>
+      </article>
+
     </div>
   </div>
 </section>
